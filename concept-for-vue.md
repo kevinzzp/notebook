@@ -21,11 +21,33 @@ Vue.component('my-component'
 
 例子：
 
-`<div id="example">`
+`<div id="example">`
 
-`<my-component></my-component>`
+`<my-component></my-component>`
 
 `</div>`
+
+```
+// 注册
+```
+
+```js
+Vue.component(
+'my-component', {
+  template: '<div>A custom component!</div>'
+})
+// 创建根实例
+new
+ Vue({
+  el: '#example'
+})
+```
+
+渲染为：
+
+```
+<div id="example"><div>A custom component!</div></div>
+```
 
 ### 单文件组件
 
