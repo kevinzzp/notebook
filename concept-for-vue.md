@@ -21,9 +21,11 @@ Vue.component('my-component'
 
 例子：
 
+`<div id="example">`
 
+`<my-component></my-component>`
 
-
+`</div>`
 
 ### 单文件组件
 
