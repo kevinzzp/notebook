@@ -72,20 +72,14 @@ new
 Vue.js 的插件应当有一个公开方法`install`。这个方法的第一个参数是`Vue`构造器，第二个参数是一个可选的选项对象：
 
 ```
-MyPlugin.install = 
+MyPlugin.install =
 ```
 
 ```js
-function
- (
-Vue, options
-) 
+function(Vue, options) 
 {
 // 1. 添加全局方法或属性
-  Vue.myGlobalMethod = 
-function
- (
-) 
+  Vue.myGlobalMethod = function() 
 {
 // 逻辑...
   }
@@ -99,23 +93,14 @@ function
     ...
   })
 // 3. 注入组件
-  Vue.mixin({
-created
-: 
-function
- (
-) 
+  Vue.mixin({created: function() 
 {
 // 逻辑...
     }
     ...
   })
 // 4. 添加实例方法
-  Vue.prototype.$myMethod = 
-function
- (
-methodOptions
-) 
+  Vue.prototype.$myMethod = function(methodOptions) 
 {
 // 逻辑...
   }
