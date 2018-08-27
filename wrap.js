@@ -10,7 +10,7 @@ function methodRewrite(doSomething) {
     return function() {
         var e = arguments;
         console.log("i am " + e[0]);
-        return doSomething.call(this, e)
+        return doSomething.apply(this, e)
     }
 }
 
